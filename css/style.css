@@ -1,14 +1,16 @@
-body {
-  display: flex;
-  flex-direction: column;
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   background-color: #1f2937;
   padding: 0 150px;
 }
@@ -43,17 +45,30 @@ a {
 .awesome {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #1f2937;
   padding: 100px 150px;
   color: #E5E7EB;
   gap: 48px;
 }
 
+.awesome-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.awesome-right {
+  flex-shrink: 0;
+  width: 50%;
+}
+
 .awesome-left button{
   background-color: #3882f6;
   border-radius: 5px;
-  border-style: none;
   color: #E5E7EB;
+  padding: 7px 1em;
+  border: none;
 }
 
 .awesome-right img {
@@ -106,6 +121,7 @@ a {
 
 .action {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 100px 350px;
   padding: 50px 50px;
