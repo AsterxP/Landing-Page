@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -41,14 +42,23 @@ a {
 
 .awesome {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   background-color: #1f2937;
   padding: 100px 150px;
+  color: #E5E7EB;
+  gap: 48px;
+}
+
+.awesome-left button{
+  background-color: #3882f6;
+  border-radius: 5px;
+  border-style: none;
+  color: #E5E7EB;
 }
 
 .awesome-right img {
-  height: 300px;
-  width: 600px;
+  height: 200px;
+  width: 400px;
 }
 
 .random {
@@ -70,6 +80,7 @@ a {
 .box img {
   height: auto;
   width: 180px; 
+  border-radius: 5px;
 }
 
 .quote {
@@ -95,16 +106,29 @@ a {
 
 .action {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 100px 350px;
-  padding: 25px 0;
+  padding: 50px 50px;
   background-color: #3882f6;
   color: #f9faf8;
+  border-radius: 5px;
 }
 
 .action-inner {
   display: flex;
+  gap: 64px;
+}
+
+.action-inner p {
+  margin: 0;
+}
+
+.action-inner button {
+  background-color: #3882f6;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #E5E7EB;
+  color: #E5E7EB;
 }
 
 .action-header {
@@ -118,4 +142,5 @@ a {
   align-items: center;
   background-color: #1f2937;
   color: #E5E7EB;
+  padding: 20px 0;
 }
